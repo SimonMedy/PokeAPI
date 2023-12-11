@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /*100% de la hauteur de l'écran*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*background-image: linear-gradient(60deg, #FBAB7E 0%,#F7CE68  100%);*/
+    /*background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);*/
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*centré sous forme de colonne*/
+    background-image: linear-gradient(19deg, #2149fd 0%, #a000ff 100%);
+    border-radius: 20px;
+    padding: 40px;
+    /* espace entre le contenu et les bords*/
+    width: 20%;
+    /*largeur = 60% de la taille du parent (body) */
+    max-width: 500px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#image-wrapper {
+    width: 3000px;
+}
+
+#image {
+    width: 100%;
+}
+
+#header {
+    padding: 20px;
+    display: flex;
+}
+
+#number {
+    margin-right: 8px;
+}
+
+#name {
+    text-transform: capitalize;
+    /*transforme la premiere lettre en Majuscule*/
+}
+
+#pokeBtn {
+    background-image: linear-gradient(0deg, #21D4FD 0%, #B721FF 100%);
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease
+}
+
+#pokeBtn:hover {
+    transform: translateY(-2px);
+    /*animation bouton qui se lève quand on le survole*/
+    background-image: linear-gradient(0deg, #B721FF 0%, #21D4FD 100%);
+}
+
+#pokeBtn:active {
+    transform: translateY(2px);
+    background-image: linear-gradient(-2deg, #B721FF 0%, #21D4FD 100%);
+}
+
+#inputBtn {
+    background-image: linear-gradient(0deg, #21D4FD 0%, #B721FF 100%);
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease
+}
+
+#inputBtn:hover {
+    transform: translateY(-2px);
+    /*animation bouton qui se lève quand on le survole*/
+    background-image: linear-gradient(0deg, #B721FF 0%, #21D4FD 100%);
+}
+
+#inputBtn:active {
+    transform: translateY(2px);
+    background-image: linear-gradient(-2deg, #B721FF 0%, #21D4FD 100%);
+}
